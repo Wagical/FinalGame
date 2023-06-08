@@ -1,8 +1,8 @@
 # FinalGame
-A Game somewhat similar to Simon Says
-The game that I will attempt to recurtate is Simon Says. 
+A Game somewhat similar to Simon Says AND Bop It
+The game that I will attempt to recurtate is Simon Says/Bop It. 
 In which the game will start playing a good start sound then flashing either a Red, Green, or Blue color on the LEDS. 
-Depending on the color you will need to do something. 
+Depending on the color you will need to do something withing a 7 Second time frame otherwise it will auto fail you.
 Red = Push right button
 Green = Flip the switch
 Blue = Push left button
