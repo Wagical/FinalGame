@@ -32,8 +32,6 @@ void setup() {
 void loop() {
   light = CircuitPlayground.lightSensor();
   CircuitPlayground.setBrightness(map(light,0,1030,1,255));
-      Serial.print(" Light Sensor: ");
-      Serial.println(light);
     if(switchFlag){//reset the flag and switch the state of the switch
     delay(5);
     switchFlag = 0;
@@ -122,7 +120,7 @@ rando = random(3);
 switch(rando){
   case 0:
       for(int i = 0; i<5; i++){
-      CircuitPlayground.setPixelColor(i, 255, 0, 0);
+      CircuitPlayground.setPixelColor(i, 0, 0, 255);
       }
       game = 1;
       delay_7s.start(7000, AsyncDelay::MILLIS);//expires ever 7000 mil seconds
@@ -136,7 +134,7 @@ switch(rando){
     break;
   case 2:
     for(int i = 0; i<10; i++){
-      CircuitPlayground.setPixelColor(i, 255, 0, 0);
+      CircuitPlayground.setPixelColor(i, 0, 255, 0);
       }
       game = 1;
       delay_7s.start(7000, AsyncDelay::MILLIS);//expires ever 7000 mil seconds
