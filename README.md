@@ -1,6 +1,5 @@
 # FinalGame
-Game name "Faster than Light"
-
+A Game somewhat similar to Simon Says
 The game that I will attempt to recurtate is Simon Says. 
 In which the game will start playing a good start sound then flashing either a Red, Green, or Blue color on the LEDS. 
 Depending on the color you will need to do something. 
@@ -8,7 +7,7 @@ Red = Push right button
 Green = Flip the switch
 Blue = Push left button
 If done right then it will play a good sound then choose another color to do.
-If done wrong it will flash red a couple times and play a sad sound.
+If done wrong it will play sad sound.
 Create a user inputs/outputs definition sheet
 This sheet details the user input controls into the game system. Define the sensors used, their function, their raw ranges, what they will be assigned to control, any threshold or map() functions applied.
 
