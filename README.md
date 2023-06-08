@@ -6,8 +6,8 @@ Depending on the color you will need to do something.
 Red = Push right button
 Green = Flip the switch
 Blue = Push left button
-If done right then it will play a good sound then choose another color to do.
-If done wrong it will play sad sound.
+If done right then it will play a good sound then choose another color to do. While getting the correct score the sound will reach a higher pitch as your score goes up. The score will print it self to the serial monitor ever correct awnser.
+If done wrong it will play sad sound. This will reset your score back to 0.
 Create a user inputs/outputs definition sheet
 This sheet details the user input controls into the game system. Define the sensors used, their function, their raw ranges, what they will be assigned to control, any threshold or map() functions applied.
 
