@@ -1,6 +1,6 @@
 #include <AsyncDelay.h>
 #include <Adafruit_CircuitPlayground.h>
-AsyncDelay delay_7s;
+AsyncDelay delay_10s;
 float midi[127]; //tones are stored
 int A_four = 440; // a is 440 hz...
 int switchCase = 0;
@@ -104,7 +104,7 @@ void loop() {
       Serial.println(score);
     }
     }
-    if (delay_7s.isExpired()){
+    if (delay_10s.isExpired()){
       CircuitPlayground.clearPixels();
       CircuitPlayground.playTone(midi[63], 100);
       CircuitPlayground.playTone(midi[62], 100);
@@ -123,21 +123,21 @@ switch(rando){
       CircuitPlayground.setPixelColor(i, 0, 0, 255);
       }
       game = 1;
-      delay_7s.start(7000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
+      delay_10s.start(10000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
     break;
   case 1:
       for(int i = 5; i<10; i++){
       CircuitPlayground.setPixelColor(i, 255, 0, 0);
       }
       game = 1;
-      delay_7s.start(7000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
+      delay_10s.start(10000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
     break;
   case 2:
     for(int i = 0; i<10; i++){
       CircuitPlayground.setPixelColor(i, 0, 255, 0);
       }
       game = 1;
-      delay_7s.start(7000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
+      delay_10s.start(10000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
     break;
   default:
     break;
