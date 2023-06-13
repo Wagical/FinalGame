@@ -123,21 +123,21 @@ switch(rando){
       CircuitPlayground.setPixelColor(i, 0, 0, 255);
       }
       game = 1;
-      delay_7s.start(7000, AsyncDelay::MILLIS);//expires ever 7000 mil seconds
+      delay_7s.start(7000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
     break;
   case 1:
       for(int i = 5; i<10; i++){
       CircuitPlayground.setPixelColor(i, 255, 0, 0);
       }
       game = 1;
-      delay_7s.start(7000, AsyncDelay::MILLIS);//expires ever 7000 mil seconds
+      delay_7s.start(7000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
     break;
   case 2:
     for(int i = 0; i<10; i++){
       CircuitPlayground.setPixelColor(i, 0, 255, 0);
       }
       game = 1;
-      delay_7s.start(7000, AsyncDelay::MILLIS);//expires ever 7000 mil seconds
+      delay_7s.start(7000-(score*200), AsyncDelay::MILLIS);//expires ever 7000 mil seconds
     break;
   default:
     break;
